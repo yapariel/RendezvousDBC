@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Tilt+Warp&display=swap");
+
+.dashboard-page {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 10rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.about-col {
+  text-align: center;
+  font-family: "Fredoka One", sans-serif;
+  color: rgb(40, 40, 40);
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.title {
+  font-family: "Fredoka One", sans-serif;
+  color: rgb(40, 40, 40);
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.description {
+  font-family: "Fredoka One";
+  color: rgb(40, 40, 40);
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content-col {
+  flex: 0 0 70%;
+}
+
+.logo-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 30%;
+}
+
+.logo {
+  width: 100%;
+  max-width: 450px;
+  animation: floatAnimation 4s infinite;
+  padding-right: 5rem;
+}
+
+.content {
+  text-align: left;
+  padding-top: 7rem;
+  padding-left: 5rem;
+  padding-right: 15rem;
+}
+
+.custom-button {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* LOGO ANIMATION */
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+}
+
+.gallery-image {
+  width: calc(33.33% - 1rem);
+  height: auto;
+  margin: 0.5rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .gallery-image {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-image {
+    width: 100%;
+  }
+}
+
+.shake {
+  animation: shakeAnimation 0.5s;
+}
+
+@keyframes shakeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.gallery-image {
+  /* Existing styles */
+
+  transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+  transform: translateX(-2px);
+  animation: shakeAnimation 0.4s infinite;
+}
+
+@keyframes shakeAnimation {
+  0% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+/* SERVICES */
+
+/* .services {
+  background-color: red;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.service-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list h5 {
+  margin-right: 1rem;
+} */
+
+.services {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-col {
+  width: 100%;
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: red; */
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.service-list h5 {
+  flex: 0 0 calc(33.33% - 1rem);
+  margin: 0.5rem;
+  color: #000;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .service-list h5 {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
