@@ -10,6 +10,14 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    closeMobileMenu();
+  };
+
   return (
     <>
       <IconContext.Provider value={{ color: "#000000" }}>
@@ -26,16 +34,20 @@ function Navbar() {
 
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
-                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                <Link
+                  // to="/"
+                  className="nav-links"
+                  onClick={() => scrollToSection("home")}
+                >
                   HOME
                 </Link>
               </li>
 
               <li className="nav-item">
                 <Link
-                  to="/about"
+                  // to="/about"
                   className="nav-links"
-                  onClick={closeMobileMenu}
+                  onClick={() => scrollToSection("about-container")}
                 >
                   ABOUT
                 </Link>
@@ -43,9 +55,9 @@ function Navbar() {
 
               <li className="nav-item">
                 <Link
-                  to="/services"
+                  // to="/services"
                   className="nav-links"
-                  onClick={closeMobileMenu}
+                  onClick={() => scrollToSection("services")}
                 >
                   SERVICES
                 </Link>
@@ -53,9 +65,9 @@ function Navbar() {
 
               <li className="nav-item">
                 <Link
-                  to="/contact"
+                  // to="/contact"
                   className="nav-links"
-                  onClick={closeMobileMenu}
+                  onClick={() => scrollToSection("footer")}
                 >
                   CONTACT
                 </Link>

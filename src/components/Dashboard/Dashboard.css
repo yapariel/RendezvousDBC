@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Tilt+Warp&display=swap");
 
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 .dashboard-page {
-  padding-top: 10rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  /* overflow-x: hidden; */
+  height: 100vh;
 }
 
 .content-container {
@@ -13,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 12rem;
 }
 
 .about-container {
@@ -22,6 +29,7 @@
   align-items: center;
   padding: 2rem;
   justify-content: center;
+  text-align: center;
 }
 
 .about-col {
@@ -37,11 +45,22 @@
   color: rgb(40, 40, 40);
   font-weight: 900;
   font-size: xx-large;
+  /* text-align: center; */
+  margin-top: 2rem;
 }
 
 .description {
   font-family: "Fredoka One";
   color: rgb(40, 40, 40);
+}
+
+.description1 {
+  font-family: "Fredoka One";
+  color: rgb(40, 40, 40);
+  font-weight: 300;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .content-row {
@@ -57,6 +76,7 @@
 }
 
 .logo-col {
+  padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -66,22 +86,22 @@
 .logo {
   width: 100%;
   max-width: 450px;
-  animation: floatAnimation 4s infinite;
+  /* animation: floatAnimation 4s infinite; */
   padding-right: 5rem;
 }
 
 .content {
   text-align: left;
-  padding-top: 7rem;
+  padding-top: 10rem;
   padding-left: 5rem;
   padding-right: 15rem;
 }
 
 .custom-button {
-  border: 2px solid #000;
+  border: 2px solid #3b5998;
   background-color: transparent;
-  color: #000;
-  font-family: "Arial", sans-serif;
+  color: #3b5998;
+  font-family: "Fredoka One", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -90,7 +110,7 @@
 }
 
 .custom-button:hover {
-  background-color: #000;
+  background-color: #3b5998;
   color: #fff;
 }
 
@@ -105,6 +125,139 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* HOME RESPONSIVE */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .dashboard-page {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+
+  .content-container {
+    padding-bottom: 0;
+  }
+
+  .description {
+    text-align: center;
+  }
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description1 {
+    font-family: "Fredoka One";
+    color: rgb(40, 40, 40);
+    font-weight: 200;
+    padding-top: 2rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+
+  .logo-col {
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 30%;
+    padding-bottom: 1rem;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 200px;
+    padding-right: 5rem;
+  }
+
+  .content-col {
+    text-align: center;
+    margin-top: 0rem;
+  }
+
+  .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+  }
+  .custom-button {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .dashboard-page {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  .content-container {
+    padding-bottom: 0rem;
+  }
+
+  .description {
+    text-align: center;
+  }
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .description1 {
+    font-family: "Fredoka One";
+    color: rgb(40, 40, 40);
+    font-weight: 200;
+    padding-top: 2rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  .logo-col {
+    justify-content: center;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    max-width: 200px;
+    padding-right: 0;
+  }
+
+  .content-col {
+    text-align: center;
+    margin-top: 0rem;
+  }
+
+  .content {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+  }
+  .custom-button {
+    display: none;
+  }
+  .title {
+    text-align: center;
   }
 }
 
@@ -144,6 +297,10 @@
 @media (max-width: 768px) {
   .gallery-image {
     width: calc(50% - 1rem);
+  }
+  .gallery {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -199,26 +356,6 @@
 }
 
 /* SERVICES */
-
-/* .services {
-  background-color: red;
-  width: 100%;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.service-list {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.service-list h5 {
-  margin-right: 1rem;
-} */
-
 .services {
   width: 100%;
   padding: 2rem;
@@ -247,7 +384,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* background-color: red; */
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
@@ -262,6 +398,191 @@
 
 @media (max-width: 768px) {
   .service-list h5 {
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(25% - 1rem);
+    text-align: center;
+  }
+}
+
+.service-bg {
+  background-color: rgb(213, 213, 213);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 10rem;
+  padding-top: 1rem;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-col {
+  flex: 0 0 70%;
+}
+
+.contact {
+  text-align: left;
+  padding-top: 7rem;
+  padding-left: 5rem;
+  padding-right: 15rem;
+  color: rgb(40, 40, 40);
+}
+
+.contact-title {
+  font-size: xxx-large;
+}
+.contact-button {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-title {
+  font-family: "Fredoka One", sans-serif;
+}
+
+.con {
+  font-family: "Fredoka One", sans-serif;
+}
+.contact-description {
+  font-family: "Fredoka One", sans-serif;
+}
+
+.contact-logo {
+  padding-top: 7rem;
+  padding-right: 5rem;
+}
+
+/* .footer {
+  background-color: rgb(213, 213, 213);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+} */
+
+.mana {
+  text-align: left;
+  font-family: "Fredoka One", sans-serif;
+  font-weight: 700;
+  /* padding-top: 1.5rem; */
+  /* margin-left: 1rem; */
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-logo {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 30%;
+}
+
+.logo1 {
+  width: 100%;
+  max-width: 450px;
+  animation: floatAnimation 4s infinite;
+  padding-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding-bottom: 1rem;
+  }
+
+  .contact-description {
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+    font-weight: 500;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-logo {
+    display: none;
+  }
+
+  .logo1 {
+    display: none;
+  }
+
+  .contact-col {
+    text-align: center;
+    margin-top: 0rem;
+  }
+
+  .contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+  }
+  .contact-title {
+    text-align: center;
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact-container {
+    padding-bottom: 1rem;
+  }
+
+  .contact-description {
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+  }
+  .contact-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-logo {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .contact-logo {
+    display: none;
+  }
+
+  .logo1 {
+    display: none;
+  }
+
+  .contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+  }
+  .contact-title {
+    text-align: center;
+    font-size: xx-large;
   }
 }
