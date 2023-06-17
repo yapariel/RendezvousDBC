@@ -199,6 +199,9 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+}
+
 @media screen and (max-width: 991px) {
   body {
     overflow-x: hidden;
@@ -287,7 +290,7 @@ body {
 }
 
 .gallery-image {
-  width: calc(33.33% - 1rem);
+  width: calc(20% - 1rem);
   height: auto;
   margin: 0.5rem;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
@@ -300,15 +303,19 @@ body {
   }
   .gallery {
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 900px) {
   .gallery-image {
-    width: 100%;
+    width: calc(20% - 1rem);
   }
-}
+  .gallery {
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+  }
+} */
 
 .shake {
   animation: shakeAnimation 0.5s;

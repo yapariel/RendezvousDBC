@@ -67,7 +67,7 @@ function Navbar() {
                 <Link
                   // to="/contact"
                   className="nav-links"
-                  onClick={() => scrollToSection("footer")}
+                  onClick={() => scrollToSection("contact-description")}
                 >
                   CONTACT
                 </Link>
