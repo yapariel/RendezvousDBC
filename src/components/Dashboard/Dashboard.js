@@ -63,11 +63,11 @@ const Dashboard = () => {
             <div className="content">
               <h1 className="title">RENDEZVOUS DRUM AND BUGLE CORP.</h1>
               <p className="description">
-                Rendezvous DBC is a passionate musical group dedicated to
-                creating and performing captivating melodies. With our
-                unwavering commitment to the art of music, we have embarked on a
-                remarkable journey, crafting unforgettable musical experiences
-                that resonate with the soul.
+                Rendezvous Drum and Bugle Corps is a passionate musical group
+                dedicated to creating and performing captivating melodies. With
+                our unwavering commitment to the art of music, we have embarked
+                on a remarkable journey, crafting unforgettable musical
+                experiences that resonate with the soul.
               </p>
               <br />
               <Button
@@ -86,12 +86,20 @@ const Dashboard = () => {
       </Container>
       <Container id="about-container" className="about-container">
         <Row className="about-row">
-          <Col className="about-col">
-            <h2>MEET THE AMAZING BAND!</h2>
-          </Col>
+          <h2 className="about-rende">ABOUT RENDEZVOUS</h2>
+          <p className="about-description">
+            We started in 2008 as a drum and bugle corps from the lovely city of
+            Cebu, Philippines. We love music and have been making amazing tunes
+            and performances ever since. With a history of more than ten years,
+            Rendezvous keeps pushing for great music, impressing audiences with
+            our talent and hard work.
+          </p>
           <Col className="gallery">
-            <Col xs={6} md={4}>
-              {/* <img src={image2} alt="Image 1" className="gallery-image" /> */}
+            <Col className="about-col">
+              <h2>MEET THE AMAZING BAND!</h2>
+            </Col>
+            <Col className="images" xs={6} md={4}>
+              <img src={image2} alt="Image 1" className="gallery-image" />
               <img src={image3} alt="Image 1" className="gallery-image" />
               <img src={image4} alt="Image 1" className="gallery-image" />
               <img src={image5} alt="Image 1" className="gallery-image" />
@@ -166,7 +174,7 @@ const Dashboard = () => {
               <h2 className="contact-description">
                 <FontAwesomeIcon icon={faPhone} className="icon" />
                 <span> </span>
-                +639223432722 +639456155950
+                09223432722 09456155950
               </h2>
               <h2 className="contact-description">
                 <FontAwesomeIcon icon={faFacebook} className="icon" />
@@ -180,6 +188,9 @@ const Dashboard = () => {
           </Col>
         </Row>
       </Container>
+      <Row className="footer-container">
+        <span className="foot-title">MUSIC IS A MISSION NOT A COMPETITION</span>
+      </Row>
     </div>
   );
 };

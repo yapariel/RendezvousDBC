@@ -297,13 +297,51 @@ body {
   border-radius: 20px;
 }
 
+.about-rende {
+  font-family: "Fredoka One";
+  color: rgb(40, 40, 40);
+}
+.about-description {
+  font-family: "Fredoka One";
+  color: rgb(40, 40, 40);
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
 @media (max-width: 768px) {
   .gallery-image {
-    width: calc(50% - 1rem);
+    width: calc(30% - 1rem);
   }
   .gallery {
-    padding-left: 0.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .about-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .about-description {
+    font-family: "Fredoka One";
+    color: rgb(40, 40, 40);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .about-col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  h2 {
+    padding-top: 2rem;
+    font-family: "Fredoka One";
+    color: rgb(40, 40, 40);
+  }
+  .logo-col {
+    padding-top: 0rem;
+  }
+  .about-row {
+    padding: 0rem;
   }
 }
 
@@ -591,5 +629,33 @@ body {
   .contact-title {
     text-align: center;
     font-size: xx-large;
+  }
+}
+
+.footer-container {
+  background: #d3d3d3;
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.foot-title {
+  color: #fff;
+  font-size: large;
+  font-weight: 900;
+  font-family: "Fredoka One", sans-serif;
+  color: rgb(40, 40, 40);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .foot-title {
+    color: #fff;
+    font-size: medium;
+    font-weight: 900;
+    font-family: "Fredoka One", sans-serif;
+    color: rgb(40, 40, 40);
+    text-align: center;
   }
 }
