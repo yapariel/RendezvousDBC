@@ -6,7 +6,6 @@
   align-items: center;
   font-size: 0.9rem;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -255,5 +254,14 @@
     color: #ffffff;
     border: none;
     margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .nav_logo-img {
+    display: none;
+  }
+  .nav-title {
+    font-size: smaller;
   }
 }

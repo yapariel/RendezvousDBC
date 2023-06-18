@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
 import logo from "../../Assets/Images/logo.png";
+import { Col } from "react-bootstrap";
 
 function Navbar() {
   const [click, setClick] = React.useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               <img src={logo} className="nav_logo-img" />
-              RENDEZVOUS DBC
+              <Col className="nav-title">RENDEZVOUS DBC</Col>
             </Link>
 
             <div className="menu-icon" onClick={handleClick}>
