@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
-import logo from "../../Assets/Images/logo.png";
+import rendezvouslogo from "../../Assets/Images/rendezvouslogo.png";
 import { Col } from "react-bootstrap";
 
 function Navbar() {
@@ -25,7 +25,11 @@ function Navbar() {
         <div className="navbar">
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <img src={logo} className="nav_logo-img" />
+              <img
+                src={rendezvouslogo}
+                className="nav_logo-img"
+                alt="rendezvous dbc"
+              />
               <Col className="nav-title">RENDEZVOUS DBC</Col>
             </Link>
 

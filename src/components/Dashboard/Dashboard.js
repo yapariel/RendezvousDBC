@@ -5,44 +5,43 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-// import ParticlesBg from "particles-bg";
 import MessengerCustomerChat from "react-messenger-customer-chat";
-import logo from "../../Assets/Images/logo1.png";
-import logo1 from "../../Assets/Images/logo1.png";
+import rendezvouslogo from "../../Assets/Images/rendezvouslogo.png";
+import rendezvouslogo1 from "../../Assets/Images/rendezvouslogo1.png";
 // import image1 from "../../Assets/Images/image1.jpg";
-import image2 from "../../Assets/Images/image2.jpg";
-import image3 from "../../Assets/Images/image3.jpg";
-import image4 from "../../Assets/Images/image4.jpg";
-import image5 from "../../Assets/Images/image5.jpg";
-import image6 from "../../Assets/Images/image6.jpg";
-import image7 from "../../Assets/Images/image7.jpg";
-import image77 from "../../Assets/Images/image7-1.jpg";
-import image8 from "../../Assets/Images/image8.jpg";
-import image9 from "../../Assets/Images/image9.jpg";
-import image10 from "../../Assets/Images/image10.jpg";
-import image11 from "../../Assets/Images/image11.jpg";
-import image12 from "../../Assets/Images/image12.jpg";
-import image13 from "../../Assets/Images/image13.jpg";
-import image14 from "../../Assets/Images/image14.jpg";
-import image15 from "../../Assets/Images/image15.jpg";
-import image16 from "../../Assets/Images/image16.jpg";
-import image161 from "../../Assets/Images/image161.jpg";
-import image17 from "../../Assets/Images/image17.jpg";
-import image18 from "../../Assets/Images/image18.jpg";
-import image19 from "../../Assets/Images/image19.jpg";
-import image20 from "../../Assets/Images/image20.jpg";
-import image21 from "../../Assets/Images/image21.jpg";
-import image22 from "../../Assets/Images/image22.jpg";
-import image23 from "../../Assets/Images/image23.jpg";
-import image24 from "../../Assets/Images/image24.jpg";
-import image25 from "../../Assets/Images/image25.jpg";
-import image26 from "../../Assets/Images/image26.jpg";
-import image27 from "../../Assets/Images/image27.jpg";
-import image28 from "../../Assets/Images/image28.jpg";
-import image29 from "../../Assets/Images/image29.jpg";
-import image30 from "../../Assets/Images/image30.jpg";
-import image31 from "../../Assets/Images/image31.jpg";
-import image32 from "../../Assets/Images/image32.jpg";
+import rendezvous2 from "../../Assets/Images/rendezvous2.jpg";
+import rendezvous3 from "../../Assets/Images/rendezvous3.jpg";
+import rendezvous4 from "../../Assets/Images/rendezvous4.jpg";
+import rendezvous5 from "../../Assets/Images/rendezvous5.jpg";
+import rendezvous6 from "../../Assets/Images/rendezvous6.jpg";
+import rendezvous7 from "../../Assets/Images/rendezvous7.jpg";
+import rendezvous77 from "../../Assets/Images/rendezvous7-1.jpg";
+import rendezvous8 from "../../Assets/Images/rendezvous8.jpg";
+import rendezvous9 from "../../Assets/Images/rendezvous9.jpg";
+import rendezvous10 from "../../Assets/Images/rendezvous10.jpg";
+import rendezvous11 from "../../Assets/Images/rendezvous11.jpg";
+import rendezvous12 from "../../Assets/Images/rendezvous12.jpg";
+import rendezvous13 from "../../Assets/Images/rendezvous13.jpg";
+import rendezvous14 from "../../Assets/Images/rendezvous14.jpg";
+import rendezvous15 from "../../Assets/Images/rendezvous15.jpg";
+import rendezvous16 from "../../Assets/Images/rendezvous16.jpg";
+import rendezvous161 from "../../Assets/Images/rendezvous161.jpg";
+import rendezvous17 from "../../Assets/Images/rendezvous17.jpg";
+import rendezvous18 from "../../Assets/Images/rendezvous18.jpg";
+import rendezvous19 from "../../Assets/Images/rendezvous19.jpg";
+import rendezvous20 from "../../Assets/Images/rendezvous20.jpg";
+import rendezvous21 from "../../Assets/Images/rendezvous21.jpg";
+import rendezvous22 from "../../Assets/Images/rendezvous22.jpg";
+import rendezvous23 from "../../Assets/Images/rendezvous23.jpg";
+import rendezvous24 from "../../Assets/Images/rendezvous24.jpg";
+import rendezvous25 from "../../Assets/Images/rendezvous25.jpg";
+import rendezvous26 from "../../Assets/Images/rendezvous26.jpg";
+import rendezvous27 from "../../Assets/Images/rendezvous27.jpg";
+import rendezvous28 from "../../Assets/Images/rendezvous28.jpg";
+import rendezvous29 from "../../Assets/Images/rendezvous29.jpg";
+import rendezvous30 from "../../Assets/Images/rendezvous30.jpg";
+import rendezvous31 from "../../Assets/Images/rendezvous31.jpg";
+import rendezvous32 from "../../Assets/Images/rendezvous32.jpg";
 
 const Dashboard = () => {
   const handleFacebookButtonClick = () => {
@@ -62,13 +61,13 @@ const Dashboard = () => {
           <Col xs={12} md={6} className="content-col">
             <div className="content">
               <h1 className="title">RENDEZVOUS DRUM AND BUGLE CORP.</h1>
-              <p className="description">
+              <h2 className="description">
                 Rendezvous Drum and Bugle Corps is a passionate musical group
                 dedicated to creating and performing captivating melodies. With
                 our unwavering commitment to the art of music, we have embarked
                 on a remarkable journey, crafting unforgettable musical
                 experiences that resonate with the soul.
-              </p>
+              </h2>
               <br />
               <Button
                 variant="primary"
@@ -80,58 +79,190 @@ const Dashboard = () => {
             </div>
           </Col>
           <Col xs={12} md={6} className="logo-col">
-            <img src={logo} className="logo" />
+            <img src={rendezvouslogo} className="logo" alt="rendezvous dbc" />
           </Col>
         </Row>
       </Container>
       <Container id="about-container" className="about-container">
         <Row className="about-row">
           <h2 className="about-rende">ABOUT RENDEZVOUS</h2>
-          <p className="about-description">
+          <h2 className="about-description">
             We started in 2008 as a drum and bugle corps from the lovely city of
             Cebu, Philippines. We love music and have been making amazing tunes
             and performances ever since. With a history of more than ten years,
             Rendezvous keeps pushing for great music, impressing audiences with
             our talent and hard work.
-          </p>
+          </h2>
           <Col className="gallery">
             <Col className="about-col">
               <h2>MEET THE AMAZING BAND!</h2>
             </Col>
             <Col className="images" xs={6} md={4}>
-              <img src={image2} alt="Image 1" className="gallery-image" />
-              <img src={image3} alt="Image 1" className="gallery-image" />
-              <img src={image4} alt="Image 1" className="gallery-image" />
-              <img src={image5} alt="Image 1" className="gallery-image" />
-              <img src={image6} alt="Image 1" className="gallery-image" />
-              <img src={image7} alt="Image 1" className="gallery-image" />
-              <img src={image77} alt="Image 1" className="gallery-image" />
-              <img src={image8} alt="Image 1" className="gallery-image" />
-              <img src={image9} alt="Image 1" className="gallery-image" />
-              <img src={image10} alt="Image 1" className="gallery-image" />
-              <img src={image11} alt="Image 1" className="gallery-image" />
-              <img src={image12} alt="Image 1" className="gallery-image" />
-              <img src={image13} alt="Image 1" className="gallery-image" />
-              <img src={image14} alt="Image 1" className="gallery-image" />
-              <img src={image15} alt="Image 1" className="gallery-image" />
-              <img src={image16} alt="Image 1" className="gallery-image" />
-              <img src={image161} alt="Image 1" className="gallery-image" />
-              <img src={image17} alt="Image 1" className="gallery-image" />
-              <img src={image18} alt="Image 1" className="gallery-image" />
-              <img src={image19} alt="Image 1" className="gallery-image" />
-              <img src={image20} alt="Image 1" className="gallery-image" />
-              <img src={image21} alt="Image 1" className="gallery-image" />
-              <img src={image22} alt="Image 1" className="gallery-image" />
-              <img src={image23} alt="Image 1" className="gallery-image" />
-              <img src={image24} alt="Image 1" className="gallery-image" />
-              <img src={image25} alt="Image 1" className="gallery-image" />
-              <img src={image26} alt="Image 1" className="gallery-image" />
-              <img src={image27} alt="Image 1" className="gallery-image" />
-              <img src={image28} alt="Image 1" className="gallery-image" />
-              <img src={image29} alt="Image 1" className="gallery-image" />
-              <img src={image30} alt="Image 1" className="gallery-image" />
-              <img src={image31} alt="Image 1" className="gallery-image" />
-              <img src={image32} alt="Image 1" className="gallery-image" />
+              <img
+                src={rendezvous2}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous3}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous4}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous5}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous6}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous7}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous77}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous8}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous9}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous10}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous11}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous12}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous13}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous14}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous15}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous16}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous161}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous17}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous18}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous19}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous20}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous21}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous22}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous23}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous24}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous25}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous26}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous27}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous28}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous29}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous30}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous31}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
+              <img
+                src={rendezvous32}
+                alt="Rendezvous dbc - Rendezvous Drum and Bugle Corps"
+                className="gallery-image"
+              />
             </Col>
           </Col>
         </Row>
@@ -184,7 +315,7 @@ const Dashboard = () => {
             </div>
           </Col>
           <Col xs={12} md={6} className="contact-logo">
-            <img src={logo1} className="logo1" />
+            <img src={rendezvouslogo1} className="logo1" alt="rendezvous dbc" />
           </Col>
         </Row>
       </Container>

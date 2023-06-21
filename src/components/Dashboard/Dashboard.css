@@ -766,3 +766,16 @@ body {
     padding-top: 15rem;
   }
 }
+
+@media (max-width: 375px) {
+  .logo-col {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+  .about-rende {
+    padding-top: 0%;
+  }
+  .about-description {
+    padding-top: 0%;
+  }
+}
