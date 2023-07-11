@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
-import rendezvouslogo from "../../Assets/Images/rendezvouslogo.png";
+import rendezvouslogo from "../../Assets/Images/rendezvous-logo.png";
 import { Col } from "react-bootstrap";
 
 function Navbar() {
@@ -28,7 +28,7 @@ function Navbar() {
               <img
                 src={rendezvouslogo}
                 className="nav_logo-img"
-                alt="rendezvous dbc"
+                alt="rendezvous dbc - Drum and Bugle Corps Cebu City"
               />
               <Col className="nav-title">RENDEZVOUS DBC</Col>
             </Link>
