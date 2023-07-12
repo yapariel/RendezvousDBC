@@ -48,7 +48,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="dashboard-page">
+    <Container className="dashboard-page">
       <MessengerCustomerChat
         pageId="1235305326607708"
         appId="1690004001449085"
@@ -58,7 +58,7 @@ const Dashboard = () => {
       <Container id="home" className="content-container">
         <Row className="content-row">
           <Col xs={12} md={6} className="content-col">
-            <div className="content">
+            <Col className="content">
               <h1 className="title">RENDEZVOUS DRUM AND BUGLE CORP.</h1>
               <h2 className="description">
                 Rendezvous Drum and Bugle Corps, Cebu City, Philippines. is a
@@ -75,7 +75,7 @@ const Dashboard = () => {
               >
                 Facebook
               </Button>
-            </div>
+            </Col>
           </Col>
           <Col xs={12} md={6} className="logo-col">
             <img
@@ -294,7 +294,7 @@ const Dashboard = () => {
       <Container className="contact-container">
         <Row className="contact-row">
           <Col className="contact-col">
-            <div className="contact">
+            <Col className="contact">
               <h1 className="contact-title">CONTACT US!</h1>
               <h3 className="contact-description">
                 If you're interested in joining our team or booking a
@@ -316,7 +316,7 @@ const Dashboard = () => {
                 <span> </span>
                 Rendezvous Drum and Bugle Corps
               </h2>
-            </div>
+            </Col>
           </Col>
           <Col xs={12} md={6} className="contact-logo">
             <img src={rendezvouslogo1} className="logo1" alt="rendezvous dbc" />
@@ -326,7 +326,7 @@ const Dashboard = () => {
       <Row className="footer-container">
         <span className="foot-title">MUSIC IS A MISSION NOT A COMPETITION</span>
       </Row>
-    </div>
+    </Container>
   );
 };
 
