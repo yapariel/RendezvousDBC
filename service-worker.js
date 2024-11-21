@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/RendezvousDBC/precache-manifest.91349f63bc93abb66719b2dbdea43ce6.js"
+  "/RendezvousDBC/precache-manifest.8ef25c0930452dba62af00ed70b5af69.js"
 );
 
 workbox.clientsClaim();
