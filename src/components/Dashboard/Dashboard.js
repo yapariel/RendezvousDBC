@@ -61,8 +61,7 @@ const Dashboard = () => {
             <Col className="content">
               <h1 className="title">RENDEZVOUS DRUM AND BUGLE CORP.</h1>
               <h2 className="description">
-                Rendezvous Drum and Bugle Corps, Cebu City, Philippines. is a
-                passionate musical group dedicated to creating and performing
+                A passionate musical group dedicated to creating and performing
                 captivating melodies. With our unwavering commitment to the art
                 of music, we have embarked on a remarkable journey, crafting
                 unforgettable musical experiences that resonate with the soul.
